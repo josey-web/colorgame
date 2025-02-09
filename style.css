@@ -1,0 +1,83 @@
+/* Basic styling for game container */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #363636;
+    
+}
+
+.game-container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+#colorBox {
+    height: 100px;
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 8px;
+    background-color: grey;
+}
+
+.color-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    margin-bottom: 20px;
+
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    margin: 5px 0;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: #004080;
+}
+
+/* Disabled button style */
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.gameStatus {
+  height: 10px;
+}
+
+/* Responsive styling */
+@media (max-width: 500px) {
+    .game-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .color-options {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.shadow{
+box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+height: 35px;
+}
